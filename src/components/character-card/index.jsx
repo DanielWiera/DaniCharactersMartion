@@ -26,13 +26,14 @@ const Character = ({ img, color, name, title }) => {
                         border: "2px outset black",
                         borderRadius: "20px",
                         background: "linear-gradient(195deg, #42424a, #191919)",
+                        boxShadow: `1px 1px 1px 0px ${color}`,
                     }}
                 >
                     <Box
                         style={{
                             height: "200px",
                             paddingTop: "10px",
-                            paddingBottom: "10px"
+                            paddingBottom: "10px",
                         }}
                     >
                         <img
@@ -42,7 +43,9 @@ const Character = ({ img, color, name, title }) => {
                                 marginLeft: "auto",
                                 marginRight: "auto",
                                 width: "180px",
-                                height: "180px"
+                                height: "180px",
+                                boxShadow: `0px 2px 2px 0px black`,
+                                
                             }}
                             src={`images/${img}`}
                             alt=""
@@ -67,7 +70,9 @@ const Character = ({ img, color, name, title }) => {
                                 flexDirection: "column",
                                 marginTop: "auto",
                                 marginBottom: "auto",
-                                paddingBottom: "10px"
+                                paddingBottom: "10px",
+                                paddingLeft: "10px",
+                                paddingRight: "10px",
                             }}
                         >
                             <Typography
@@ -86,8 +91,8 @@ const Character = ({ img, color, name, title }) => {
                             <Typography style={{
                                 color: "white",
                                 fontStyle: "italic",
-                                fontFamily: "cursive",
-                                fontSize: "14px",
+                                fontFamily: "Comic Sans MS",
+                                fontSize: "16px",
                             }}>
                                 {title}
                             </Typography>
