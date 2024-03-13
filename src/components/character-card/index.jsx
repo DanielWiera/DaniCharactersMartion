@@ -19,8 +19,9 @@ const Character = ({ img, color, name, title }) => {
             >
                 <Paper className="char-box"
                     style={{
-                        width: "260px",
-                        height: "330px",
+                        width: "250px",
+                        minHeight: "350px",
+                        height: "fit-content",
                         textAlign: "center",
                         border: "2px outset black",
                         borderRadius: "20px",
@@ -51,24 +52,27 @@ const Character = ({ img, color, name, title }) => {
                         display: "flex",
                         flexDirection: "column",
                         width: "100%",
-                        height: "77px",
+                        minHeight: "127px",
+                        height: "fit-content",
                         borderTop: "3px solid black",
                         borderBottomLeftRadius: "20px",
                         borderBottomRightRadius: "20px",
-
                         marginLeft: "auto",
                         marginRight: "auto",
                         background: "linear-gradient(185deg, #42424a, #191919)"
                     }}>
                         <Box
                             style={{
+                                display: "flex",
+                                flexDirection: "column",
                                 marginTop: "auto",
-                                marginBottom: "auto"
+                                marginBottom: "auto",
+                                paddingBottom: "10px"
                             }}
                         >
                             <Typography
                                 style={{
-                                    fontSize: "30px",
+                                    fontSize: "28px",
                                     fontStyle: "italic",
                                     fontWeight: "bold",
                                     textAlign: "center",
@@ -82,7 +86,8 @@ const Character = ({ img, color, name, title }) => {
                             <Typography style={{
                                 color: "white",
                                 fontStyle: "italic",
-                                fontFamily: "cursive"
+                                fontFamily: "cursive",
+                                fontSize: "14px",
                             }}>
                                 {title}
                             </Typography>

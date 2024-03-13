@@ -11,7 +11,7 @@ export const Footer = () => {
                 borderBottom: "4px outset black",
                 color: "white",
                 display: "flex",
-                marginTop: "30px"
+                marginTop: "20px"
             }}
         >
             <Typography

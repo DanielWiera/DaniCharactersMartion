@@ -12,8 +12,8 @@ export const Header = () => {
             style={{
                 color: "white",
                 fontFamily: "cursive",
-                height: "80px",
-                marginBottom: "30px",
+                height: "65px",
+                marginBottom: "20px",
                 background: "linear-gradient(185deg, #42424a, #191919)",
                 borderBottom: "8px outset black",
                 borderTop: "8px outsite black",
@@ -24,10 +24,11 @@ export const Header = () => {
                 style={{
                     height: "100%",
                     display: "flex",
+                    marginLeft: "6px"
                 }}
             >
                 <Box
-                    style={{ width: "50%" }}
+                    style={{ width: "50%", display: "flex" }}
                 >
                     <Link
                         href={facebookURL}
@@ -45,16 +46,17 @@ export const Header = () => {
                     >
                         <img src="images/facebooklogo.png"
                             style={{
-                                height: "75px",
+                                height: "50px",
                             }}
                             alt=""
                         />
                         <Typography
                             style={{
                                 fontFamily: "cursive",
+                                display: "flex",
                                 marginTop: "auto",
                                 marginBottom: "auto",
-                                fontSize: "40px",
+                                fontSize: "28px",
                                 fontStyle: "italic",
                                 fontWeight: "bold",
                                 marginLeft: "10px",
@@ -68,7 +70,8 @@ export const Header = () => {
                     style={{
                         width: "50%",
                         justifyContent: "right",
-                        display: "flex"
+                        display: "flex",
+                        marginRight: "6px"
                     }}
                 >
                     <Link
@@ -84,10 +87,11 @@ export const Header = () => {
                         }}
                     >
                         <Typography
+                            className="hide-small"
                             style={{
                                 width: "100%",
                                 fontFamily: "cursive",
-                                fontSize: "28px",
+                                fontSize: "22px",
                                 fontStyle: "italic",
                                 fontWeight: "bold",
                                 color: "white",
@@ -100,7 +104,7 @@ export const Header = () => {
                         </Typography>
                         <img src="images/martionlogo.png"
                             style={{
-                                height: "75px",
+                                height: "50px",
                             }}
                             alt=""
                         />
