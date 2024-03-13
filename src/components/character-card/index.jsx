@@ -24,7 +24,7 @@ const Character = ({ img, color, name, title }) => {
                         textAlign: "center",
                         border: "2px outset black",
                         borderRadius: "20px",
-                        background: "linear-gradient(195deg, #42424a, #191919)"
+                        background: "linear-gradient(195deg, #42424a, #191919)",
                     }}
                 >
                     <Box

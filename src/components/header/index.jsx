@@ -40,6 +40,7 @@ export const Header = () => {
                             textAlign: "right",
                             color: "white",
                             display: "flex",
+                            minWidth: "400px"
                         }}
                     >
                         <img src="images/facebooklogo.png"
@@ -56,7 +57,7 @@ export const Header = () => {
                                 fontSize: "40px",
                                 fontStyle: "italic",
                                 fontWeight: "bold",
-                                marginLeft: "10px"
+                                marginLeft: "10px",
                             }}
                         >
                             Dani karakterei
