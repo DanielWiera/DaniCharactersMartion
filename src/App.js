@@ -6,7 +6,7 @@ const App = () => {
     <>
       <div
         style={{
-          minHeight: "calc(100vh - 68px)"
+          minHeight: "calc(100vh - 58px)"
         }}
       >
         <Header />

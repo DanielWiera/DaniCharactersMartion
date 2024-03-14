@@ -8,13 +8,16 @@ export const Characters = () => {
                 name="Angyal Daniella"
                 title="A Mráz Kálmán Internátus diákja"
                 img="angyaldaniella.jpg"
+                pic="Kiss Daniella"
                 color="#CEA2FD"
+                
             />
 
             <Character
                 name="Brankovich Alexandra"
                 title="ELTE-EMK, mágikus lények szak, modell"
                 img="brankovichalexandra.png"
+                pic="Samantha Guerrero"
                 color="#2D548E"
             />
 
@@ -22,6 +25,7 @@ export const Characters = () => {
                 name="Fenyvesi Liliána Nóra"
                 title="Énekesnő, dalszerző, zenész"
                 img="fenyvesililiananora.jpg"
+                pic="Chrissy Costanza"
                 color="#BA55D3"
             />
 
@@ -29,6 +33,7 @@ export const Characters = () => {
                 name="Kirtz Imre"
                 title="Üzletember"
                 img="kirtzimre.png"
+                pic="Chez Rust"
                 color="#4A4DAE"
             />
 
@@ -36,6 +41,7 @@ export const Characters = () => {
                 name="Orsay Rafael"
                 title="Rubin gemmárius"
                 img="orsayrafael.jpg"
+                pic="Mehmet Ozun Dolunay"
                 color="#880808"
             />
 
@@ -43,6 +49,7 @@ export const Characters = () => {
                 name="Póra Tódor Péter"
                 title="Ezermester"
                 img="poratodorpeter.png"
+                pic="Arthur Gosse"
                 color="#CC9966"
             />
 
@@ -50,6 +57,7 @@ export const Characters = () => {
                 name="Varsányi Diána Liza"
                 title="A Karpena ösvény diákja, Ötödik évfolyam"
                 img="varsanyidianaliza.png"
+                pic="Lizge Cömert"
                 color="#236F21"
             />
         </Grid>

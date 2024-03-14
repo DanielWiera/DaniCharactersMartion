@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <Paper
             style={{
-                height: "40px",
+                height: "30px",
                 background: "linear-gradient(195deg, #42424a, #191919)",
                 borderTop: "4px outset black",
                 borderBottom: "4px outset black",
@@ -20,10 +20,11 @@ export const Footer = () => {
                 textAlign: "center",
                 fontFamily: "cursive",
                 marginTop: "auto",
-                marginBottom: "auto"
+                marginBottom: "auto",
+                fontSize: "14px"
              }}
             >
-                Created by Kiss Dániel - &#169; {new Date().getFullYear()}
+                Design: Kiss Dániel - {new Date().getFullYear()}
             </Typography>
         </Paper>
     )

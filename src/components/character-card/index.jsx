@@ -5,7 +5,7 @@ import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import "@fontsource/great-vibes";
 
-const Character = ({ img, color, name, title }) => {
+const Character = ({ name, title, img, pic, color }) => {
     const martionURL = "http://martion.alomvilag.hu/"
 
     return (
@@ -50,6 +50,16 @@ const Character = ({ img, color, name, title }) => {
                             src={`images/${img}`}
                             alt=""
                         />
+                        <Typography
+                            style={{
+                                color: "white",
+                                fontSize: "11px",
+                                fontFamily: "Comic Sans MS",
+                                fontStyle: "italic"
+                            }}
+                        >
+                            {`Kép: ${pic}`}
+                        </Typography>
                     </Box>
                     <Box style={{
                         display: "flex",
