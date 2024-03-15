@@ -96,6 +96,7 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                         >
                             <Box
                                 style={{
+                                    height: "fit-content",
                                     marginTop: "auto",
                                     marginBottom: "auto"
                                 }}
