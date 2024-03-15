@@ -10,6 +10,7 @@ export const Characters = () => {
                 <Character
                     name={character.name}
                     title={character.title}
+                    birthday={character.birthday}
                     img={character.img}
                     pic={character.pic}
                     color={character.color}

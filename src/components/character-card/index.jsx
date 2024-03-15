@@ -5,8 +5,18 @@ import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import "@fontsource/great-vibes";
 
-const Character = ({ name, title, img, pic, color }) => {
+const Character = ({ name, title, birthday, img, pic, color }) => {
     const martionURL = "http://martion.alomvilag.hu/"
+
+    const calculateAge = () => {
+        const dob = new Date(birthday);
+        const month_diff = Date.now() - dob.getTime();
+        const age_dt = new Date(month_diff);
+        const year = age_dt.getUTCFullYear();
+        const age = Math.abs(year - 1970);
+
+        return age;
+    }
 
     return (
         <Grid item>
@@ -19,6 +29,8 @@ const Character = ({ name, title, img, pic, color }) => {
             >
                 <Paper className="char-box"
                     style={{
+                        display: "block",
+                        flexDirection: "column",
                         width: "250px",
                         minHeight: "350px",
                         height: "fit-content",
@@ -45,7 +57,7 @@ const Character = ({ name, title, img, pic, color }) => {
                                 width: "180px",
                                 height: "180px",
                                 boxShadow: `0px 2px 2px 0px black`,
-                                
+
                             }}
                             src={`images/${img}`}
                             alt=""
@@ -62,49 +74,72 @@ const Character = ({ name, title, img, pic, color }) => {
                         </Typography>
                     </Box>
                     <Box style={{
-                        display: "flex",
-                        flexDirection: "column",
                         width: "100%",
                         minHeight: "127px",
                         height: "fit-content",
-                        borderTop: "3px solid black",
                         borderBottomLeftRadius: "20px",
                         borderBottomRightRadius: "20px",
-                        marginLeft: "auto",
-                        marginRight: "auto",
                         background: "linear-gradient(185deg, #42424a, #191919)"
                     }}>
                         <Box
                             style={{
                                 display: "flex",
                                 flexDirection: "column",
-                                marginTop: "auto",
-                                marginBottom: "auto",
+                                minHeight: "90px",
+                                borderTop: `3px groove black`,
+                                borderBottom: `3px groove black`,
+                                height: "fit-content",
                                 paddingBottom: "10px",
                                 paddingLeft: "10px",
                                 paddingRight: "10px",
                             }}
                         >
-                            <Typography
+                            <Box
                                 style={{
-                                    fontSize: "28px",
-                                    fontStyle: "italic",
-                                    fontWeight: "bold",
-                                    textAlign: "center",
-                                    fontFamily: "Great Vibes",
-                                    color: color,
-                                    textShadow: "2px 4px 4px black",
+                                    marginTop: "auto",
+                                    marginBottom: "auto"
                                 }}
                             >
-                                {name}
-                            </Typography>
+                                <Typography
+                                    style={{
+                                        fontSize: "28px",
+                                        fontStyle: "italic",
+                                        fontWeight: "bold",
+                                        fontFamily: "Great Vibes",
+                                        color: color,
+                                        textShadow: "2px 4px 4px black",
+                                    }}
+                                >
+                                    {name}
+                                </Typography>
+                                <Typography style={{
+                                    color: "white",
+                                    fontStyle: "italic",
+                                    fontFamily: "Comic Sans MS",
+                                    fontSize: "16px",
+                                }}>
+                                    {title}
+                                </Typography>
+                            </Box>
+                        </Box>
+                        <Box
+                            style={{
+                                display: "flex",
+                                minHeight: "27px",
+                                height: "fit-content",
+                                flexDirection: "column",
+
+                            }}
+                        >
                             <Typography style={{
                                 color: "white",
                                 fontStyle: "italic",
                                 fontFamily: "Comic Sans MS",
-                                fontSize: "16px",
+                                fontSize: "12px",
+                                marginTop: "auto",
+                                marginBottom: "auto"
                             }}>
-                                {title}
+                                {`Kor: ${calculateAge()} év`}
                             </Typography>
                         </Box>
                     </Box>
