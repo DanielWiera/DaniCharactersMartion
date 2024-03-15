@@ -65,7 +65,7 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                         <Typography
                             style={{
                                 color: "white",
-                                fontSize: "11px",
+                                fontSize: "10px",
                                 fontFamily: "Comic Sans MS",
                                 fontStyle: "italic"
                             }}
