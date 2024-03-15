@@ -21,7 +21,8 @@ export const Footer = () => {
                 fontFamily: "Comic Sans MS",
                 marginTop: "auto",
                 marginBottom: "auto",
-                fontSize: "14px"
+                fontSize: "14px",
+                fontStyle: "italic"
              }}
             >
                 Design: Kiss Dániel - {new Date().getFullYear()}

@@ -19,7 +19,7 @@ export const Header = ({ orders, currentOrder, setOrder }) => {
         <Paper
             style={{
                 color: "white",
-                fontFamily: "cursive",
+                fontFamily: "Comic Sans MS",
                 height: "65px",
                 marginBottom: "20px",
                 background: "linear-gradient(185deg, #42424a, #191919)",
@@ -73,7 +73,7 @@ export const Header = ({ orders, currentOrder, setOrder }) => {
                             Dani karakterei
                         </Typography>
                     </Link>
-                    <Toolbar title="Sorrend">
+                    <Toolbar title="Sorrend" style={{padding: 0, marginLeft: "12px"}}>
                         <Select
                             style={{
                                 color: "white",
