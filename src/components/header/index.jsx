@@ -12,7 +12,6 @@ export const Header = ({ orders, currentOrder, setOrder }) => {
 
     const changeOrder = (e) => {
         setOrder(e.target.value);
-        console.log(e.target.value)
     }
 
     return (

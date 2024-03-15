@@ -19,6 +19,13 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
         return age;
     }
 
+    const hasBirthday = () => {
+        const today = new Date();
+        const bday = new Date(birthday);
+
+        return today.getDate() === bday.getDate() && today.getMonth() === bday.getMonth();
+    }
+
     return (
         <Grid item>
             <Link
@@ -122,7 +129,6 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                                 minHeight: "27px",
                                 height: "fit-content",
                                 flexDirection: "column",
-
                             }}
                         >
                             <Typography style={{
@@ -131,9 +137,9 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                                 fontFamily: "Comic Sans MS",
                                 fontSize: "12px",
                                 marginTop: "auto",
-                                marginBottom: "auto"
+                                marginBottom: "auto",
                             }}>
-                                {`Kor: ${calculateAge()} év`}
+                                {`Kor: ${calculateAge()} év ${hasBirthday() ? "Happy birthday!" : ""}`}
                             </Typography>
                         </Box>
                     </Box>
