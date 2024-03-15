@@ -60,7 +60,7 @@ export const Header = ({ orders, currentOrder, setOrder }) => {
                         />
                         <Typography
                             style={{
-                                fontFamily: "cursive",
+                                fontFamily: "Comic Sans MS",
                                 display: "flex",
                                 marginTop: "auto",
                                 marginBottom: "auto",

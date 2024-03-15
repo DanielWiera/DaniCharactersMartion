@@ -1,10 +1,8 @@
 import Grid from '@mui/material/Grid';
 import Character from '../character-card';
-import { getCharacters } from './characterList';
 
-export const Characters = ({order}) => {
-    const characters = getCharacters(order);
-    
+export const Characters = ({characters}) => {
+
     return (
         <Grid container spacing={5} justifyContent="center">
             {characters.map((character, idx) =>

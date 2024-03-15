@@ -1,10 +1,12 @@
 import { Characters, Header, Footer } from './components';
 import './App.css';
 import { useState } from 'react';
+import { getCharacters } from './components/characters/characterList';
 
 const App = () => {
   const orders = ["Név", "Kor"];
   const [currentOrder, setCurrentOrder] = useState(orders[0]);
+  const characters = getCharacters(currentOrder);
 
   return (
     <>
@@ -18,7 +20,7 @@ const App = () => {
           currentOrder={currentOrder}
           setOrder={setCurrentOrder}
         />
-        <Characters order={currentOrder} />
+        <Characters characters={characters} />
       </div>
       <Footer />
     </>
