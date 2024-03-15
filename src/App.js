@@ -1,7 +1,11 @@
 import { Characters, Header, Footer } from './components';
 import './App.css';
+import { useState } from 'react';
 
 const App = () => {
+  const orders = ["Név", "Kor"];
+  const [currentOrder, setCurrentOrder] = useState(orders[0]);
+
   return (
     <>
       <div
@@ -9,8 +13,12 @@ const App = () => {
           minHeight: "calc(100vh - 58px)"
         }}
       >
-        <Header />
-        <Characters />
+        <Header
+          orders={orders}
+          currentOrder={currentOrder}
+          setOrder={setCurrentOrder}
+        />
+        <Characters order={currentOrder} />
       </div>
       <Footer />
     </>

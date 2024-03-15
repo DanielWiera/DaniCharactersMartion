@@ -2,10 +2,18 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
+import Select from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
+import Toolbar from '@mui/material/Toolbar';
 
-export const Header = () => {
+export const Header = ({ orders, currentOrder, setOrder }) => {
     const martionURL = "http://martion.alomvilag.hu/"
     const facebookURL = "https://www.facebook.com/daniel.k.kiss.7/"
+
+    const changeOrder = (e) => {
+        setOrder(e.target.value);
+        console.log(e.target.value)
+    }
 
     return (
         <Paper
@@ -28,7 +36,7 @@ export const Header = () => {
                 }}
             >
                 <Box
-                    style={{ width: "50%", display: "flex" }}
+                    style={{ width: "50%", display: "flex", minWidth: "440px" }}
                 >
                     <Link
                         href={facebookURL}
@@ -41,7 +49,7 @@ export const Header = () => {
                             textAlign: "right",
                             color: "white",
                             display: "flex",
-                            minWidth: "400px"
+                            minWidth: "275px"
                         }}
                     >
                         <img src="images/facebooklogo.png"
@@ -65,6 +73,26 @@ export const Header = () => {
                             Dani karakterei
                         </Typography>
                     </Link>
+                    <Toolbar title="Sorrend">
+                        <Select
+                            style={{
+                                color: "white",
+                                marginTop: "auto",
+                                marginBottom: "auto",
+                                border: "3px groove black",
+                                fontFamily: "Comic Sans MS",
+                                fontStyle: "italic",
+                                marginRight: "10px"
+                            }}
+                            size="small"
+                            value={currentOrder}
+                            onChange={changeOrder}
+                        >
+                            {orders.map((order, idx) =>
+                                <MenuItem key={idx} value={order}>{order} szerint</MenuItem>
+                            )}
+                        </Select>
+                    </Toolbar>
                 </Box>
                 <Box
                     style={{

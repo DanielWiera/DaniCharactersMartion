@@ -57,6 +57,14 @@ const characterList = [
     },
 ]
 
-export const getCharacters = () => {
-    return characterList.sort((a,b) => a.name >= b.name ? 1 : -1)
+export const getCharacters = (order) => {
+    switch (order) {
+        case "Név":
+            return characterList.sort((a, b) => a.name >= b.name ? 1 : -1);
+        case "Kor":
+            return characterList.sort((a,b) => new Date(a.birthday) <= new Date(b.birthday) ? 1 : -1)
+        default:
+            return characterList.sort((a, b) => a.name >= b.name ? 1 : -1);
+    }
+
 }
