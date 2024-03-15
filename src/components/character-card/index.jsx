@@ -3,6 +3,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
+import Toolbar from '@mui/material/Toolbar';
 import "@fontsource/great-vibes";
 
 const Character = ({ name, title, birthday, img, pic, color }) => {
@@ -32,7 +33,7 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                         display: "block",
                         flexDirection: "column",
                         width: "250px",
-                        minHeight: "350px",
+                        minHeight: "340px",
                         height: "fit-content",
                         textAlign: "center",
                         border: "2px outset black",
@@ -43,35 +44,27 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                 >
                     <Box
                         style={{
-                            height: "200px",
+                            height: "190px",
                             paddingTop: "10px",
                             paddingBottom: "10px",
                         }}
                     >
-                        <img
-                            style={{
-                                border: "4px inset black",
-                                borderRadius: "20px",
-                                marginLeft: "auto",
-                                marginRight: "auto",
-                                width: "180px",
-                                height: "180px",
-                                boxShadow: `0px 2px 2px 0px black`,
+                        <Toolbar title={`Kép: ${pic}`}>
+                            <img
+                                style={{
+                                    border: "4px inset black",
+                                    borderRadius: "20px",
+                                    marginLeft: "auto",
+                                    marginRight: "auto",
+                                    width: "180px",
+                                    height: "180px",
+                                    boxShadow: `0px 2px 2px 0px black`,
 
-                            }}
-                            src={`images/${img}`}
-                            alt=""
-                        />
-                        <Typography
-                            style={{
-                                color: "white",
-                                fontSize: "10px",
-                                fontFamily: "Comic Sans MS",
-                                fontStyle: "italic"
-                            }}
-                        >
-                            {`Kép: ${pic}`}
-                        </Typography>
+                                }}
+                                src={`images/${img}`}
+                                alt=""
+                            />
+                        </Toolbar>
                     </Box>
                     <Box style={{
                         width: "100%",
