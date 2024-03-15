@@ -18,7 +18,7 @@ export const Footer = () => {
              style={{
                 width: "100%",
                 textAlign: "center",
-                fontFamily: "cursive",
+                fontFamily: "Comic Sans MS",
                 marginTop: "auto",
                 marginBottom: "auto",
                 fontSize: "14px"

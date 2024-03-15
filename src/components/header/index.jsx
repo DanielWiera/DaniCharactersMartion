@@ -36,7 +36,7 @@ export const Header = ({ orders, currentOrder, setOrder }) => {
                 }}
             >
                 <Box
-                    style={{ width: "50%", display: "flex", minWidth: "440px" }}
+                    style={{ width: "50%", display: "flex", minWidth: "400px" }}
                 >
                     <Link
                         href={facebookURL}
@@ -89,12 +89,13 @@ export const Header = ({ orders, currentOrder, setOrder }) => {
                             onChange={changeOrder}
                         >
                             {orders.map((order, idx) =>
-                                <MenuItem key={idx} value={order}>{order} szerint</MenuItem>
+                                <MenuItem key={idx} value={order}>{order}</MenuItem>
                             )}
                         </Select>
                     </Toolbar>
                 </Box>
                 <Box
+                    className="hide-small"
                     style={{
                         width: "50%",
                         justifyContent: "right",
@@ -118,7 +119,7 @@ export const Header = ({ orders, currentOrder, setOrder }) => {
                             className="hide-small"
                             style={{
                                 width: "100%",
-                                fontFamily: "cursive",
+                                fontFamily: "Comic Sans MS",
                                 fontSize: "22px",
                                 fontStyle: "italic",
                                 fontWeight: "bold",
@@ -131,6 +132,7 @@ export const Header = ({ orders, currentOrder, setOrder }) => {
                             Martion
                         </Typography>
                         <img src="images/martionlogo.png"
+                            className="hide-small"
                             style={{
                                 height: "50px",
                             }}
