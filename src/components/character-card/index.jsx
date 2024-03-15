@@ -45,7 +45,7 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                         textAlign: "center",
                         border: "2px outset black",
                         borderRadius: "20px",
-                        background: "linear-gradient(195deg, #42424a, #191919)",
+                        background: `linear-gradient(260deg, ${color}, #191919)`,
                         boxShadow: `1px 1px 1px 0px ${color}`,
                     }}
                 >
