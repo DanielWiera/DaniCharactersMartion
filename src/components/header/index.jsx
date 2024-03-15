@@ -36,7 +36,7 @@ export const Header = ({ orders, currentOrder, setOrder }) => {
                 }}
             >
                 <Box
-                    style={{ width: "50%", display: "flex", minWidth: "400px" }}
+                    style={{ width: "50%", display: "flex" }}
                 >
                     <Link
                         href={facebookURL}
@@ -82,7 +82,6 @@ export const Header = ({ orders, currentOrder, setOrder }) => {
                                 border: "3px groove black",
                                 fontFamily: "Comic Sans MS",
                                 fontStyle: "italic",
-                                marginRight: "10px"
                             }}
                             size="small"
                             value={currentOrder}
