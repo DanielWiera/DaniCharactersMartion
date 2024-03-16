@@ -39,8 +39,8 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                     style={{
                         display: "block",
                         flexDirection: "column",
-                        width: "250px",
-                        minHeight: "340px",
+                        width: "230px",
+                        minHeight: "320px",
                         height: "fit-content",
                         textAlign: "center",
                         border: "2px outset black",
@@ -51,7 +51,7 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                 >
                     <Box
                         style={{
-                            height: "190px",
+                            height: "170px",
                             paddingTop: "10px",
                             paddingBottom: "10px",
                         }}
@@ -63,8 +63,8 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                                     borderRadius: "20px",
                                     marginLeft: "auto",
                                     marginRight: "auto",
-                                    width: "180px",
-                                    height: "180px",
+                                    width: "160px",
+                                    height: "160px",
                                     boxShadow: `0px 2px 2px 0px black`,
 
                                 }}
@@ -75,7 +75,7 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                     </Box>
                     <Box style={{
                         width: "100%",
-                        minHeight: "127px",
+                        minHeight: "107px",
                         height: "fit-content",
                         borderBottomLeftRadius: "20px",
                         borderBottomRightRadius: "20px",
@@ -103,7 +103,7 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                             >
                                 <Typography
                                     style={{
-                                        fontSize: "28px",
+                                        fontSize: "24px",
                                         fontStyle: "italic",
                                         fontWeight: "bold",
                                         fontFamily: "Great Vibes",
@@ -117,7 +117,7 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                                     color: "white",
                                     fontStyle: "italic",
                                     fontFamily: "Comic Sans MS",
-                                    fontSize: "16px",
+                                    fontSize: "14px",
                                 }}>
                                     {title}
                                 </Typography>
