@@ -32,6 +32,14 @@ const characterList = [
         color: "#4A4DAE"
     },
     {
+        name: "Morgós Rajmund",
+        title: "Gépjármű mechatronikai technikus",
+        birthday: "2002-02-10",
+        img: "morgosrajmund.png",
+        pic: "River Viiperi",
+        color: "#C0C0C0"
+    },
+    {
         name: "Orsay Rafael",
         title: "Rubin gemmárius",
         birthday: "1991-02-03",
