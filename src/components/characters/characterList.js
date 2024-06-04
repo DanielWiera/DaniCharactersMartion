@@ -37,7 +37,7 @@ const characterList = [
         birthday: "2002-02-10",
         img: "morgosrajmund.png",
         pic: "River Viiperi",
-        color: "#3A67CE"
+        color: "#FBE7A1"
     },
     {
         name: "Orsay Rafael",
