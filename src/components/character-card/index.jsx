@@ -131,16 +131,24 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                                 flexDirection: "column",
                             }}
                         >
-                            <Typography style={{
-                                color: "white",
-                                fontStyle: "italic",
-                                fontFamily: "Comic Sans MS",
-                                fontSize: "12px",
-                                marginTop: "auto",
-                                marginBottom: "auto",
-                            }}>
-                                {`Kor: ${calculateAge()} év ${hasBirthday() ? "Happy birthday!" : ""}`}
-                            </Typography>
+                            <Toolbar title={`Születésnap: ${new Date(birthday).toLocaleDateString("hu-HU")}`}
+                                style={{
+                                    minHeight: "0px",
+                                }}
+                            >
+                                <Typography style={{
+                                    color: "white",
+                                    fontStyle: "italic",
+                                    fontFamily: "Comic Sans MS",
+                                    fontSize: "12px",
+                                    marginTop: "4px",
+                                    marginBottom: "4px",
+                                    width: "100%"
+                                }}>
+                                    {`Kor: ${calculateAge()} év ${hasBirthday() ? "Happy birthday!" : ""}`}
+
+                                </Typography>
+                            </Toolbar>
                         </Box>
                     </Box>
                 </Paper>
