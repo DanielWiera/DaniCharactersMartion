@@ -16,6 +16,14 @@ const characterList = [
         color: "#2D548E"
     },
     {
+        name: "Caterina Coxton",
+        title: "a Coxton Varázslóképző tanára",
+        birthday: "1993-03-03",
+        img: "caterinacoxton.png",
+        pic: "Charelle Schriek",
+        color: "#FF007F"
+    },
+    {
         name: "Fenyvesi Liliána Nóra",
         title: "Énekesnő, dalszerző, zenész",
         birthday: "1995-11-24",
