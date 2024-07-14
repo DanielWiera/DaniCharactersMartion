@@ -17,7 +17,7 @@ const characterList = [
     },
     {
         name: "Caterina Coxton",
-        title: "a Coxton Varázslóképző tanára",
+        title: "A Coxton Varázslóképző tanára",
         birthday: "1993-03-03",
         img: "caterinacoxton.png",
         pic: "Charelle Schriek",
