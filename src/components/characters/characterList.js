@@ -3,7 +3,7 @@ const characterList = [
         name: "Angyal Daniella",
         title: "A Mráz Kálmán Internátus diákja",
         birthday: "2003-12-05",
-        img: "angyaldaniella.jpg",
+        img: "angyaldaniella2.png",
         pic: "Kiss Daniella",
         color: "#CEA2FD"
     },
