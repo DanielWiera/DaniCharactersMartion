@@ -65,7 +65,7 @@ const characterList = [
     },
     {
         name: "Varsányi Diána Liza",
-        title: "A Karpena ösvény diákja, Ötödik évfolyam",
+        title: "A Karpena ösvény diákja, Hatodik évfolyam",
         img: "varsanyidianaliza.png",
         birthday: "2006-09-08",
         pic: "Lizge Cömert",
