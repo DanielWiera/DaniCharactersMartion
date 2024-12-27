@@ -6,9 +6,10 @@ import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 
-export const Header = ({ orders, currentOrder, setOrder }) => {
+export const Header = ({ orders, characterCount, currentOrder, setOrder }) => {
     const martionURL = "http://martion.alomvilag.hu/"
     const facebookURL = "https://www.facebook.com/daniel.k.kiss.7/"
+    console.log(characterCount)
 
     const changeOrder = (e) => {
         setOrder(e.target.value);
@@ -48,7 +49,7 @@ export const Header = ({ orders, currentOrder, setOrder }) => {
                             textAlign: "right",
                             color: "white",
                             display: "flex",
-                            minWidth: "275px"
+                            minWidth: "350px"
                         }}
                     >
                         <img src="images/facebooklogo.png"
@@ -69,7 +70,7 @@ export const Header = ({ orders, currentOrder, setOrder }) => {
                                 marginLeft: "10px",
                             }}
                         >
-                            Dani karakterei
+                            {`Dani karakterei (${characterCount})`}
                         </Typography>
                     </Link>
                     <Toolbar title="Sorrend" style={{padding: 0, marginLeft: "12px"}}>
