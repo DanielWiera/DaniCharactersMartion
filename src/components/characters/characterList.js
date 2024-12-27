@@ -3,7 +3,7 @@ const characterList = [
         name: "Angyal Daniella",
         title: "A Mráz Kálmán Internátus diákja",
         birthday: "2003-12-05",
-        img: "angyaldaniella2.png",
+        img: "angyaldaniella.jpg",
         pic: "Kiss Daniella",
         color: "#CEA2FD"
     },
@@ -16,12 +16,12 @@ const characterList = [
         color: "#2D548E"
     },
     {
-        name: "Caterina Coxton",
-        title: "A Coxton Varázslóképző tanára",
-        birthday: "1993-03-03",
-        img: "caterinacoxton2.png",
-        pic: "Charelle Schriek",
-        color: "#FF007F"
+        name: "Diósy Szervác",
+        title: "A Ferfex ösvény diákja, Harmadik évfolyam",
+        birthday: "2009-11-03",
+        img: "diosyszervac.png",
+        pic: "Hero Fiennes Tiffin",
+        color: "#FFD700"
     },
     {
         name: "Fenyvesi Liliána Nóra",
@@ -65,7 +65,7 @@ const characterList = [
     },
     {
         name: "Varsányi Diána Liza",
-        title: "A Karpena ösvény diákja, Hatodik évfolyam",
+        title: "A Karpena ösvény diákja, Ötödik évfolyam",
         img: "varsanyidianaliza.png",
         birthday: "2006-09-08",
         pic: "Lizge Cömert",
