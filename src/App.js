@@ -17,6 +17,7 @@ const App = () => {
       >
         <Header
           orders={orders}
+          characterCount={characters.length}
           currentOrder={currentOrder}
           setOrder={setCurrentOrder}
         />
