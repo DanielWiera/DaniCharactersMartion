@@ -21,7 +21,7 @@ const characterList = [
         birthday: "2009-11-03",
         img: "diosyszervac.png",
         pic: "Hero Fiennes Tiffin",
-        color: "#FFD700"
+        color: "#466d55"
     },
     {
         name: "Fenyvesi Liliána Nóra",
