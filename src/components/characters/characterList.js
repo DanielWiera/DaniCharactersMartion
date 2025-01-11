@@ -16,6 +16,14 @@ const characterList = [
         color: "#2D548E"
     },
     {
+        name: "Caterina Coxton",
+        title: "A Coxton Varázslóképző tanára",
+        birthday: "1993-03-03",
+        img: "caterinacoxton2.png",
+        pic: "Charelle Schriek",
+        color: "#FF007F"
+    },
+    {
         name: "Diósy Szervác",
         title: "A Ferfex ösvény diákja, Harmadik évfolyam",
         birthday: "2009-11-03",
