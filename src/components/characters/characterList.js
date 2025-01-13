@@ -16,10 +16,18 @@ const characterList = [
         color: "#2D548E"
     },
     {
+        name: "Brankovich Tivadar",
+        title: "Mágustörténész, műtárgyszakértő",
+        birthday: "1982-04-06",
+        img: "brankovichtivadar.png",
+        pic: "Justus Frederic Hansen",
+        color: "#B8860B"
+    },
+    {
         name: "Caterina Coxton",
         title: "A Coxton Varázslóképző tanára",
         birthday: "1993-03-03",
-        img: "caterinacoxton2.png",
+        img: "caterinacoxton.png",
         pic: "Charelle Schriek",
         color: "#FF007F"
     },
