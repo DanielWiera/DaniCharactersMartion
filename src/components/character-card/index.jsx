@@ -101,18 +101,20 @@ const Character = ({ name, title, birthday, img, pic, color }) => {
                                     marginBottom: "auto"
                                 }}
                             >
-                                <Typography
-                                    style={{
-                                        fontSize: "24px",
-                                        fontStyle: "italic",
-                                        fontWeight: "bold",
-                                        fontFamily: "Great Vibes",
-                                        color: color,
-                                        textShadow: "2px 4px 4px black",
-                                    }}
-                                >
-                                    {name}
-                                </Typography>
+                                <Toolbar title={name} style={{padding: "0px", minHeight: "0px"}}>
+                                    <Typography
+                                        style={{
+                                            width: "100%",
+                                            fontSize: "25px",
+                                            fontWeight: "bold",
+                                            fontFamily: "Great Vibes",
+                                            color: color,
+                                            textShadow: "2px 4px 4px black",
+                                        }}
+                                    >
+                                        {name}
+                                    </Typography>
+                                </Toolbar>
                                 <Typography style={{
                                     color: "white",
                                     fontStyle: "italic",
